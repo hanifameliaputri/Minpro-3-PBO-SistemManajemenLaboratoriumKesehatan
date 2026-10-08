@@ -50,8 +50,9 @@ LaboratoriumKesehatan/src/main/java/
     '-- LaboratoriumView.java         (menu, judul, pesan, dan konfirmasi pendaftaran)
 ```
 
-<!-- GANTI SS: ambil ulang screenshot struktur project di NetBeans supaya Identitas.java ikut terlihat -->
-<img height="400" alt="image" src="https://github.com/user-attachments/assets/df901a28-d166-452e-a1f6-5fcad20a0fed" />
+
+<img width="428" height="450" alt="image" src="https://github.com/user-attachments/assets/8248dfc7-9bb1-4bb2-88be-9e26307b4374" />
+
 
 | Package | Peran |
 |---|---|
@@ -542,15 +543,8 @@ private int bacaUmur(Scanner scanner) {
 
 **1. Abstract class `Petugas`** (`model/Petugas.java`, baris 11):
 
-```java
-public abstract class Petugas implements Identitas {
-    private String id;
-    private String nama;
-    private int umur;
-    private String jenisKelamin;
-    ...
-}
-```
+<img height="247" alt="image" src="https://github.com/user-attachments/assets/6c04664c-fb2a-4546-9e5a-4c3602deed5b" />
+
 
 `Petugas` dibuat abstract karena "petugas" secara umum tidak punya peran yang jelas. Di laboratorium, petugas pasti berperan sebagai **Analis** atau **Dokter**. Karena itu object `Petugas` tidak boleh dibuat langsung. Jika dicoba `new Petugas(...)`, compiler menolaknya:
 
@@ -560,9 +554,8 @@ error: Petugas is abstract; cannot be instantiated
 
 **2. Abstract method `tampilkanInfo()`** (`model/Petugas.java`, baris 75):
 
-```java
-public abstract void tampilkanInfo();
-```
+<img height="220" alt="image" src="https://github.com/user-attachments/assets/6002698d-4db5-4949-b6d2-32d578d5a68d" />
+
 
 Abstract method hanya memiliki **kerangka** (nama, parameter, tipe kembalian) tanpa isi. Setiap subclass **wajib** mengisinya. Alasannya, tidak ada satu cara tampil yang cocok untuk semua petugas: `Analis` menampilkan spesialisasi, sedangkan `Dokter` menampilkan nomor STR. Jika subclass lupa mengisinya, program tidak dapat dikompilasi.
 
@@ -595,11 +588,8 @@ Nilai tambah yang diterapkan pada program ini adalah **interface**, yaitu `Ident
 
 **Isi interface** (`model/Identitas.java`):
 
-```java
-public interface Identitas {
-    void tampilkanInfo();
-}
-```
+<img height="220" alt="image" src="https://github.com/user-attachments/assets/ff0fd0e7-009e-4306-9d18-d49c153ece0e" />
+
 
 **Cara kerjanya:**
 
