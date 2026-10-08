@@ -133,8 +133,8 @@ Data pendaftaran terakhir disimpan pada tiga atribut Controller (`pasienTerdafta
 
 **Pendaftaran dengan pasien baru:**
 
-<!-- GANTI SS: ambil ulang, prompt sekarang memakai contoh format (Nama (huruf saja), Umur (1-120), Jenis Kelamin (Laki-laki/Perempuan)) dan daftar petugas tampil 2 baris per petugas -->
-<img height="500" alt="image" src="https://github.com/user-attachments/assets/d0c6835f-c0f3-4ae4-9a47-479a10919cc6" />
+<img width="842" height="701" alt="image" src="https://github.com/user-attachments/assets/716efbfe-6b34-484b-851c-db21cb17e02d" />
+
 
 Penjelasan alur pada gambar di atas:
 
@@ -150,8 +150,8 @@ Penjelasan alur pada gambar di atas:
 
 **Pendaftaran dengan pasien yang sudah terdaftar:**
 
-<!-- GANTI SS: ambil ulang, daftar petugas sekarang tampil 2 baris per petugas -->
-<img height="600" alt="image" src="https://github.com/user-attachments/assets/f9554086-2e57-4a52-80f7-2771cd47b236" />
+<img width="682" height="657" alt="image" src="https://github.com/user-attachments/assets/e8bf9e65-f8b2-4b0a-90e1-397efe415fdc" />
+
 
 Penjelasan alur pada gambar di atas:
 
@@ -167,10 +167,10 @@ Menu ini berisi empat fitur: tambah pasien, lihat semua pasien, cari pasien berd
 
 <img height="205" alt="image" src="https://github.com/user-attachments/assets/8bf91a83-2c9f-47aa-8841-f9337e5d3e0c" />
 
-**Tambah pasien.** Prompt menampilkan contoh format yang valid.
+**Tambah pasien.** 
 
-<!-- GANTI SS: ambil ulang, prompt sekarang memakai contoh format -->
-<img height="200" alt="image" src="https://github.com/user-attachments/assets/9456b43d-2908-4bd4-9cf2-805b9c8e4f2a" />
+<img height="202" alt="image" src="https://github.com/user-attachments/assets/2128553d-56bd-40a2-b5dd-ea49f3dd3ca8" />
+
 
 **Lihat semua pasien.**
 
@@ -178,7 +178,7 @@ Menu ini berisi empat fitur: tambah pasien, lihat semua pasien, cari pasien berd
 
 **Cari pasien berdasarkan ID.**
 
-<img height="200" alt="image" src="https://github.com/user-attachments/assets/a63b2cdb-bf74-4d28-b62b-39b92a2b11d3" />
+<img height="220" alt="image" src="https://github.com/user-attachments/assets/a63b2cdb-bf74-4d28-b62b-39b92a2b11d3" />
 
 **Hapus pasien.**
 
@@ -192,29 +192,29 @@ Menu ini digunakan untuk menambah **Analis**, menambah **Dokter**, dan melihat s
 
 **Tambah analis.**
 
-<!-- GANTI SS: ambil ulang, prompt sekarang memakai contoh format -->
-<img height="200" alt="image" src="https://github.com/user-attachments/assets/6e467abc-22a5-450a-a7ad-5cd4de95b1d5" />
+<img height="200" alt="image" src="https://github.com/user-attachments/assets/7a3e1e03-a44c-440a-8a73-410055eb1a78" />
+
 
 **Tambah dokter.**
 
-<!-- GANTI SS: ambil ulang, prompt sekarang memakai contoh format -->
-<img height="200" alt="image" src="https://github.com/user-attachments/assets/9ef3e20d-ba4c-493a-9c07-bc76a0bc945b" />
+<img height="200" alt="image" src="https://github.com/user-attachments/assets/bf9cf0b6-4308-4981-95fe-d626e9eeed0a" />
+
 
 **Lihat semua petugas.** Pada tampilan ini terlihat hasil **overriding** dan **polymorphism**: `Analis` menampilkan spesialisasi, sedangkan `Dokter` menampilkan nomor STR. Baris kedua (umur dan jenis kelamin) muncul karena `tampilkanInfo(true)` dipanggil (overloading). Penjelasan lengkapnya ada di [bagian 5](#5-penerapan-polymorphism-dan-abstraction).
 
-<!-- GANTI SS: ambil ulang, tampilan sekarang 2 baris per petugas (Peran + Umur/Jenis Kelamin) -->
-<img height="200" alt="image" src="https://github.com/user-attachments/assets/2541d238-741b-4295-adb2-553c22211133" />
+<img height="252" alt="image" src="https://github.com/user-attachments/assets/21810661-f7ae-4a3f-9a03-6e699b25f546" />
+
 
 ### Menu 4 - Kelola Pemeriksaan
 
 Menu ini berisi lima fitur: tambah, lihat semua, cari, ubah (nama dan biaya), dan hapus pemeriksaan.
 
-<img height="300" alt="image" src="https://github.com/user-attachments/assets/1d988ff6-93f9-4cdd-b66e-975602c74b5f" />
+<img height="200" alt="image" src="https://github.com/user-attachments/assets/1d988ff6-93f9-4cdd-b66e-975602c74b5f" />
 
 **Tambah pemeriksaan.**
 
-<!-- GANTI SS: ambil ulang, prompt biaya sekarang "Biaya (angka, >= 0):" -->
-<img height="300" alt="image" src="https://github.com/user-attachments/assets/a96b2a2e-fc24-435e-bc07-5c3fa097019d" />
+<img height="220" alt="image" src="https://github.com/user-attachments/assets/51528dd8-c305-4305-a258-907021e290a9" />
+
 
 **Lihat semua pemeriksaan.**
 
@@ -235,12 +235,13 @@ Pemeriksaan berhasil diubah.
 
 Pada contoh di atas nama tetap `Tes Darah Lengkap` (karena hanya menekan Enter) dan hanya biaya yang berubah menjadi `200000.0`. Logikanya ada pada method `bacaTeksOpsional()` dan `bacaDoubleOpsional()` di Controller. Jika angka yang dimasukkan tidak valid atau negatif, nilai lama tetap dipertahankan dan program menampilkan pesan.
 
-<!-- GANTI SS: ambil ulang proses ubah pemeriksaan dengan Enter untuk melewati data -->
-<img height="400" alt="image" src="https://github.com/user-attachments/assets/62de538f-b1dd-4389-8f37-c4f3fa8423d4" />
+<img height="221" alt="image" src="https://github.com/user-attachments/assets/702e4e32-8450-459b-82b5-a93731e29cf5" />
+
 
 **Hapus pemeriksaan.**
 
-<img height="400" alt="image" src="https://github.com/user-attachments/assets/2a21e46a-a9bf-4de2-a2f9-ee1684ea5011" />
+<img height="340" alt="image" src="https://github.com/user-attachments/assets/21363670-79b8-4264-aa89-70a32d090d0c" />
+
 
 ### Menu 5 - Kelola Hasil Pemeriksaan
 
@@ -261,8 +262,8 @@ Jenis pemeriksaan dan petugas pada hasil diambil dari pendaftaran terakhir (menu
 
 **Input hasil pemeriksaan.**
 
-<!-- GANTI SS: ambil ulang, prompt status sekarang "Status (Normal/Tidak Normal):" -->
-<img height="300" alt="image" src="https://github.com/user-attachments/assets/c1702f36-0e91-4faf-899a-e27454e18335" />
+<img height="218" alt="image" src="https://github.com/user-attachments/assets/8e374296-ec44-4d4a-a43d-cc21c744a857" />
+
 
 **Lihat semua hasil.**
 
