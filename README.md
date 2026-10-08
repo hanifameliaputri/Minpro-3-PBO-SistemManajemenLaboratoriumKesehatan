@@ -432,36 +432,19 @@ Konstruktor subclass memanggil konstruktor superclass dengan `super(...)`, lalu 
 
 Method di superclass (`model/Petugas.java`, baris 74-75):
 
-```java
-@Override
-public abstract void tampilkanInfo();
-```
+
+<img height="220" alt="image" src="https://github.com/user-attachments/assets/a75c7189-e460-475c-9896-4f221be02020" />
+
 
 Versi di subclass `Analis`:
 
-```java
-@Override
-public void tampilkanInfo() {
-    System.out.println(
-        tampilkanInfoDasar()
-        + " | Peran: Analis"
-        + " | Spesialisasi/Bidang: " + spesialisasiBidang
-    );
-}
-```
+<img height="242" alt="image" src="https://github.com/user-attachments/assets/ef4695ec-fd0d-4ada-a80b-fef14896c419" />
+
 
 Versi di subclass `Dokter`:
 
-```java
-@Override
-public void tampilkanInfo() {
-    System.out.println(
-        tampilkanInfoDasar()
-        + " | Peran: Dokter"
-        + " | No. STR: " + nomorSTR
-    );
-}
-```
+<img height="222" alt="image" src="https://github.com/user-attachments/assets/682844dc-a0bc-4eb9-8875-b0117cfd8830" />
+
 
 **Cara kerja overriding (dynamic method dispatch).** Overriding dipakai ketika pengguna membuka **Kelola Petugas -> Lihat Semua Petugas** (juga saat memilih petugas pada menu Pendaftaran Pemeriksaan). Kedua fitur tersebut memanggil `tampilkanSemuaPetugas()` di `LaboratoriumController` (baris 541-550):
 
