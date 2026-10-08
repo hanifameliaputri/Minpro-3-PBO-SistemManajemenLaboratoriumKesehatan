@@ -182,7 +182,8 @@ Menu ini berisi empat fitur: tambah pasien, lihat semua pasien, cari pasien berd
 
 **Hapus pasien.**
 
-<img height="300" alt="image" src="https://github.com/user-attachments/assets/8b07226f-a16f-4626-b5b1-056b92ec2431" />
+<img height="203" alt="image" src="https://github.com/user-attachments/assets/0922ac9e-a677-4687-8b1b-758f83c2cd66" />
+
 
 ### Menu 3 - Kelola Petugas
 
@@ -262,18 +263,18 @@ Jenis pemeriksaan dan petugas pada hasil diambil dari pendaftaran terakhir (menu
 
 **Input hasil pemeriksaan.**
 
-<img height="218" alt="image" src="https://github.com/user-attachments/assets/8e374296-ec44-4d4a-a43d-cc21c744a857" />
+<img width="607" height="222" alt="image" src="https://github.com/user-attachments/assets/a49501cb-4a07-4d1c-8efa-c06c79984400" />
 
 
 **Lihat semua hasil.**
 
-<!-- GANTI SS: ambil ulang, kolom Pasien sekarang menampilkan nama pasien, bukan ID -->
-<img height="400" alt="image" src="https://github.com/user-attachments/assets/2ec5fbac-5815-4fa6-a40a-1c1406d6c424" />
+<img height="211" alt="image" src="https://github.com/user-attachments/assets/3afbef30-0341-42e2-bddb-af30f00d275d" />
+
 
 **Lihat riwayat hasil per pasien.**
 
-<!-- GANTI SS: ambil ulang, kolom Pasien sekarang menampilkan nama pasien, bukan ID -->
-<img height="400" alt="image" src="https://github.com/user-attachments/assets/cae10999-f5d9-4f28-91bd-71c9ccc1051f" />
+<img height="217" alt="image" src="https://github.com/user-attachments/assets/26ac35f1-7321-41fb-b887-29e7ffdd49c6" />
+
 
 ### Validasi Input
 
@@ -281,18 +282,17 @@ Ketika pengguna memasukkan input yang salah (misalnya huruf pada kolom umur, ata
 
 **Contoh pada umur:**
 
-<!-- GANTI SS: ambil ulang supaya prompt dengan contoh format terlihat -->
-<img height="200" alt="image" src="https://github.com/user-attachments/assets/2b3287a8-a402-4cb8-81f9-6f301150e1fa" />
+<img height="238" alt="image" src="https://github.com/user-attachments/assets/d8de3950-42b3-4a2d-aa4a-2ff7d37bacb0" />
 
 **Contoh pada jenis kelamin:**
 
-<!-- GANTI SS: ambil ulang supaya prompt dengan contoh format terlihat -->
-<img height="200" alt="image" src="https://github.com/user-attachments/assets/f0d20258-6276-439c-baf2-865dc61df61d" />
+<img height="241" alt="image" src="https://github.com/user-attachments/assets/28799782-3320-477a-ad4c-31e5a3560001" />
+
 
 **Contoh pada nama:**
 
-<!-- GANTI SS: ambil ulang supaya prompt dengan contoh format terlihat -->
-<img height="200" alt="image" src="https://github.com/user-attachments/assets/52eea062-1202-49e4-af27-3ba4c36a9144" />
+<img height="240" alt="image" src="https://github.com/user-attachments/assets/f8b80c84-664b-4b59-9c21-845f43c018a5" />
+
 
 ### Menu 6 - Keluar
 
