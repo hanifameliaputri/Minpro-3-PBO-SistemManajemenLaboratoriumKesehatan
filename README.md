@@ -686,4 +686,4 @@ Program Sistem Manajemen Laboratorium Kesehatan merupakan pengembangan dari Mini
 
 `Petugas` dijadikan abstract class dengan abstract method `tampilkanInfo()` yang diisi berbeda oleh `Analis` dan `Dokter`. Karena keduanya disimpan dalam satu `ArrayList<Petugas>`, satu perintah yang sama menghasilkan tampilan berbeda sesuai jenis petugasnya. Interface `Identitas` menjadi kontrak bahwa petugas harus bisa menampilkan informasi dirinya, dan struktur package `model`, `view`, dan `controller` membuat tanggung jawab setiap bagian program lebih jelas.
 
-Program juga telah diperbaiki sesuai catatan asisten praktikum: prompt input menampilkan contoh format, fitur ubah mendukung Enter untuk mempertahankan data, dan hasil pemeriksaan menampilkan nama pasien.
+Program juga telah diperbaiki sesuai catatan di spreadsheet: prompt input menampilkan contoh format, fitur ubah mendukung Enter untuk mempertahankan data, dan hasil pemeriksaan menampilkan nama pasien.
