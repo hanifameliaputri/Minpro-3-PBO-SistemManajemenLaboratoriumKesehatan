@@ -515,12 +515,24 @@ public class LaboratoriumController {
     }
  
     public boolean hapusPasien(String id) {
-        Pasien pasien = cariPasienById(id);
-        if (pasien == null) {
+    Pasien pasien = cariPasienById(id);
+
+    if (pasien == null) {
+        return false;
+    }
+
+    // Pasien tidak boleh dihapus jika sudah memiliki hasil pemeriksaan
+    for (HasilPemeriksaan h : daftarHasil) {
+        if (h.getIdPasien().equalsIgnoreCase(id)) {
+            view.tampilkanPesan(
+                    "Pasien tidak dapat dihapus karena sudah memiliki riwayat pemeriksaan."
+            );
             return false;
         }
-        return daftarPasien.remove(pasien);
     }
+
+    return daftarPasien.remove(pasien);
+}
  
     // PETUGAS (Analis & Dokter)
  
