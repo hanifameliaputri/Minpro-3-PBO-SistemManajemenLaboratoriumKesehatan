@@ -14,6 +14,7 @@ package Main;
 
 import controller.LaboratoriumController;
 
+
 public class Main {
     public static void main(String[] args) {
         LaboratoriumController controller =

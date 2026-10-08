@@ -30,17 +30,15 @@ public class Dokter extends Petugas {
         }
     }
  
-    @Override
-    public String tampilkanInfo() {
-        return super.tampilkanInfo() + " | Peran: Dokter | No. STR: " + nomorSTR;
-    }
  
-    @Override
-    public String tampilkanInfo(boolean detail) {
-        if (!detail) {
-            return tampilkanInfo();
-        }
-        return super.tampilkanInfo(true) + " | Peran: Dokter | No. STR: " + nomorSTR;
+ 
+   @Override
+    public void tampilkanInfo() {
+        System.out.println(
+            tampilkanInfoDasar()
+            + " | Peran: Dokter"
+            + " | No. STR: " + nomorSTR
+        );
     }
 }
  

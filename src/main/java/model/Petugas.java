@@ -8,7 +8,7 @@ package model;
  *
  * @author User
  */
-public class Petugas {
+public abstract class Petugas implements Identitas {
  
     private String id;
     private String nama;
@@ -66,21 +66,18 @@ public class Petugas {
         }
     }
  
-    /**
-     * Versi ringkas info. Akan di-override oleh Analis dan Dokter.
-     */
-    public String tampilkanInfo() {
+   protected String tampilkanInfoDasar() {
         return "ID: " + id + " | Nama: " + nama;
     }
  
-    /**
-     * Overloading dari tampilkanInfo(): versi lengkap.
-     */
-    public String tampilkanInfo(boolean detail) {
-        if (!detail) {
-            return tampilkanInfo();
+  
+   @Override
+    public abstract void tampilkanInfo();
+
+    public void tampilkanInfo(boolean detail) {
+        tampilkanInfo();   // versi Dokter/Analis yang jalan (polymorphism)
+        if (detail) {
+            System.out.println("Umur: " + getUmur() + " | Jenis Kelamin: " + getJenisKelamin());
         }
-        return "ID: " + id + " | Nama: " + nama
-                + " | Umur: " + umur + " | Jenis Kelamin: " + jenisKelamin;
     }
 }

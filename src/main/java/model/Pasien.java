@@ -28,15 +28,12 @@ public class Pasien {
     public String getId() {
         return id;
     }
- 
     public void setId(String id) {
         this.id = id;
     }
- 
     public String getNama() {
         return nama;
     }
- 
     public void setNama(String nama) {
         if (nama != null && !nama.trim().isEmpty()) {
             this.nama = nama;

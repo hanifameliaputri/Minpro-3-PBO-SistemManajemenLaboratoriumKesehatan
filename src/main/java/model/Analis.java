@@ -15,8 +15,8 @@ public class Analis extends Petugas {
     private String spesialisasiBidang;
  
     public Analis(String id, String nama, int umur, String jenisKelamin, String spesialisasiBidang) {
-        super(id, nama, umur, jenisKelamin);
-        setSpesialisasiBidang(spesialisasiBidang);
+        super(id, nama, umur, jenisKelamin);          // mengisi atribut milik Petugas
+        setSpesialisasiBidang(spesialisasiBidang);   // mengisi atribut milik Analis
     }
  
     public String getSpesialisasiBidang() {
@@ -30,17 +30,14 @@ public class Analis extends Petugas {
             System.out.println(">> ERROR: Spesialisasi tidak boleh kosong!");
         }
     }
+   
  
     @Override
-    public String tampilkanInfo() {
-        return super.tampilkanInfo() + " | Peran: Analis | Spesialisasi/Bidang: " + spesialisasiBidang;
-    }
- 
-    @Override
-    public String tampilkanInfo(boolean detail) {
-        if (!detail) {
-            return tampilkanInfo();
-        }
-        return super.tampilkanInfo(true) + " | Peran: Analis | Spesialisasi/Bidang: " + spesialisasiBidang;
+    public void tampilkanInfo() {
+    System.out.println(
+        tampilkanInfoDasar()
+        + " | Peran: Analis"
+        + " | Spesialisasi/Bidang: " + spesialisasiBidang
+    );
     }
 }
